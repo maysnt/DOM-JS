@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementByQuerySelectorAll</title>
+</head>
+
+<body>
+    <h1>Document Object</h1>
+    <h2>Metode querySelectorAll</h2>
+
+    <p>Add a background color all elements with class="example":</p>
+    <h2 class="example">Kepala</h2>
+    <p class="example">Pundak Lutut Kaki</p>
+
+    <script>
+        const nodeList = document.querySelectorAll(".example");
+        for (let i = 0; i < nodeList.length; i++) {
+            nodeList[i].style.backgroundColor = "red";
+        }
+    </script>
+</body>
+
+</html>
